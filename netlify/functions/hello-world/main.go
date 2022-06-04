@@ -14,7 +14,8 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (*event
 	return &events.APIGatewayProxyResponse{
 		StatusCode:      200,
 		Headers:         map[string]string{"Content-Type": "text/plain"},
-		Body:            "Hello, world!",
+		Body:            
+"Hello, world from GO fn!",
 		IsBase64Encoded: false,
 	}, nil
 }
